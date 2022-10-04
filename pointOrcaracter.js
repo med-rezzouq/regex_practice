@@ -1,7 +1,8 @@
 let myWord = "word monsieur word word";
 let regx = /..rd/;
 let reg = /.ord/;
-let fullregx = /w[osdf]rd/g;
+// let fullregx = /w[osdf]rd/g; // need to find only one caracter inside this brackets
+let fullregx = /w[ordf]rd/g;
 console.log(myWord.match(regx));
 console.log(myWord.match(reg));
 console.log(myWord.match(fullregx));
