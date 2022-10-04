@@ -4,11 +4,12 @@ let fullregx = /[^2-6w-z]/g; //this will search each caracter that is not betwee
 
 let reg = /[r+]/g; //this will search each caracter or manyoccurence of it
 
-let rem = /[oer+]/g; //this will search each caracter or manyoccurence of it
+let rem = /[oerf+]/g; //this will search each caracter or manyoccurence of it
+let ref = /[oerf*]/g; //this will search each caracter o 0 or many
 
 console.log(myWord.match(fullregx));
 console.log(myWord.match(reg));
-console.log(myWord.match(rem));
+console.log(myWord.match(ref));
 
 //this is also the same thing using new RegExp()
 // console.log(myWord.match(new RegExp(fullregx)));
